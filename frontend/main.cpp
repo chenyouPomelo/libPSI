@@ -93,7 +93,9 @@ void banchmarkPIR(
 	std::function<void(LaunchParams&)> sendProtol)
 {
 
-	if (cmd.isSet(tag))
+	if (cmd.isSet(tag))// CLP 是一个类名，表示命令行解析器（Command Line Parser），而 cmd 是该类的一个对象。
+		//该类用于解析命令行参数，并提供一些方法来访问这些参数。
+		//其中，isset() 是该类的一个方法，用于检查某个参数是否被设置。因此，这段代码的意思是检查命令行参数中是否设置了某个选项或标志。具体哪个选项或标志需要查看代码中的定义。
 	{
 		LaunchParams params;
 		params.mCmd = &cmd;
