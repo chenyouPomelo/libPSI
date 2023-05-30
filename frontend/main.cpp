@@ -211,6 +211,10 @@ void benchmark(
 	CLP& cmd,
 	std::function<void(LaunchParams&)> recvProtol,
 	std::function<void(LaunchParams&)> sendProtol)
+	
+	
+	/*std::function<void(LaunchParams&)> 是一个函数对象类型，表示接受一个 LaunchParams 类型的参数，并且没有返回值的函数。
+	这个类型可以被用来存储一个函数或者函数对象，以备后续调用。在这段代码中，recvProtol 是一个函数对象，用来接受 LaunchParams 类型的参数，并且没有返回值。*/
 {
 	if (cmd.isSet(tag))
 	{
